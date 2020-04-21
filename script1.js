@@ -16,6 +16,9 @@ for (var i = 0; i < dnastrand.length; i++) {
     case "g":
       mrnastrand=mrnastrand+"c";
       break;
+    default:
+      mrnastrand=mrnastrand+"X";
   }
 }
 localStorage.setItem("mrnastrand",mrnastrand);
+
