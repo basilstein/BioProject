@@ -1,4 +1,4 @@
-let tmpstrand = prompt("Enter DNA Sequence");
+let tmpstrand = prompt("Enter DNA Sequence(spaces allowed)");
 let dnasequence = tmpstrand.toUpperCase();
 let dnastrand = tmpstrand.toLowerCase();
 localStorage.setItem("dnastrand",dnastrand);
@@ -22,7 +22,7 @@ for (var i = 0; i < dnastrand.length; i++) {
     case " ":
       break;
     default:
-      mrnastrand=mrnastrand+"X";
+      mrnastrand=mrnastrand+"(incorrect input)";
   }
 }
 console.log("mrnastrand =" + mrnastrand)
@@ -34,7 +34,7 @@ for (var i = 0; i < mrnastrand.length; i = i+3) {
   let codon = mrnastrand[i]+mrnastrand[i+1]+mrnastrand[i+2];
   switch(codon){
     default:
-      aminoacids = aminoacids+"X";
+      aminoacids = aminoacids+"(incorrect input) ";
     case "uuc": case "uuu":
       aminoacids = aminoacids + "Phe ";
       break;
@@ -102,4 +102,4 @@ for (var i = 0; i < mrnastrand.length; i = i+3) {
 }
 localStorage.setItem("aminoacids",aminoacids);
 console.log("aminoacids =" + aminoacids);
-location.assign("sections/3.html"); 
+location.assign("3.html");
