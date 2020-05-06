@@ -101,5 +101,5 @@ for (var i = 0; i < mrnastrand.length; i = i+3) {
   }
 }
 localStorage.setItem("aminoacids",aminoacids);
-console.log("aminoacids =" + aminoacids)
+console.log("aminoacids =" + aminoacids);
 location.assign("sections/3.html"); 
