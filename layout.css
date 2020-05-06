@@ -1,6 +1,21 @@
 header {
-  background-color: lightblue;
+	background-color: lightblue;
+	font-size: 48px;
 }
 body {
-  background-color: lightblue;
+	background-color: lightblue;
+	font-family: "Times New Roman", Times, serif;
+}
+p {
+	font-family: "Times New Roman", Times, serif;
+}
+.nextbutton {
+	font-size: 28px;
+	font-family: "Times New Roman", Times, serif;
+	background-color: #20B2AA;
+	width: 100px;
+	height: 60px;
+}
+#end {
+	font-size: 30px;
 }
