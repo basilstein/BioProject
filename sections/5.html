@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>David & Basil - The Central Dogma</title>
+    <h1 align="middle">Conclusion</h1>
+    <link rel="stylesheet" href="../layout.css">
+  </head>
+  <body>
+    <script type="text/javascript">
+      function restart(){
+        location.assign("../index.html"); 
+      }
+      let dna = localStorage.getItem("dnasequence");
+      let mrna = localStorage.getItem("mrna");
+      let aminoacids = localStorage.getItem("aminoacids");
+      document.write("<p>The following is how the bases you inputted were transformed through transcription and translation from DNA to mRNA to an amino acid sequence.</p>");
+      document.write("<p id = 'end'><b>"+dna+" -> "+mrna+" -> "+aminoacids+"</b></p>");
+    </script>
+    <button class = "nextbutton" onclick = "javascript:restart();">restart</next>
+  </body>
+</html>
+
