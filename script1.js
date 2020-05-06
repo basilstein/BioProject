@@ -1,4 +1,4 @@
-let tmpstrand = prompt("Write 15 DNA bases");
+let tmpstrand = prompt("Enter DNA Sequence");
 let dnasequence = tmpstrand.toUpperCase();
 let dnastrand = tmpstrand.toLowerCase();
 localStorage.setItem("dnastrand",dnastrand);
