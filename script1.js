@@ -1,6 +1,8 @@
 let tmpstrand = prompt("Write 15 DNA bases");
+let dnasequence = tmpstrand.toUpperCase();
 let dnastrand = tmpstrand.toLowerCase();
 localStorage.setItem("dnastrand",dnastrand);
+localStorage.setItem("dnasequence",dnasequence);
 
 let mrnastrand = "";
 for (var i = 0; i < dnastrand.length; i++) {
