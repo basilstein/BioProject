@@ -27,6 +27,7 @@ for (var i = 0; i < dnastrand.length; i++) {
 }
 console.log("mrnastrand =" + mrnastrand)
 localStorage.setItem("mrnastrand",mrnastrand);
+localStorage.setItem("mrna",mrnastrand.toUpperCase());
 
 let aminoacids="";
 for (var i = 0; i < mrnastrand.length; i = i+3) {
