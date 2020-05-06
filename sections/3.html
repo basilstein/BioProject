@@ -3,23 +3,24 @@
   <head>
     <meta charset="utf-8">
     <title>David & Basil - The Central Dogma</title>
-    <header>Transcription</header>
+    <h1 align="middle">Transcription</h1>
     <link rel="stylesheet" href="../layout.css">
   </head>
   <body>
     <script type="text/javascript">
       function next(){
-        location.assign("3.html"); 
+        location.assign("4.html"); 
       }
       let dna = localStorage.getItem("dnasequence");
       let mrna = localStorage.getItem("mrna");
-      let aminoacids = localStorage.setItem("aminoacids");
-      document.write("<p>Transcription is the process of transcribing DNA to mRNA. Your DNA sequence is <b>"+dna+"</b>.</p><br>");
-      document.write("<p>RNA polymerase is the enzyme that does the work reading the sequence inside the DNA. In order for a gene like yours to be read, there would be a promoter before it. Promoters tell RNA polymerase when to start reading the DNA; at the promoter, RNA polymerase enters and separates the strands. This is Transcription’s first phase: Initiation.</p><br>");
-      document.write("<p>Then, the pre-mRNA is transcribed, in the 5’ to 3’ direction, meaning the first nucleotide bases are placed on the 5' end. Although the pre-mRNA is transcribed from the template(antisense) strand, because the transcription creates complementary bases, it ends up matching the coding(sense) strand. The RNA Polymerase continues moving along the template strand until it reaches the terminator. This marks the end of Transcription’s second phase: Elongation.</p><br>");
-      document.write("<p>The terminator causes RNA polymerase to let go of the transcribed mRNA, the means of which differ between prokaryotes and eukaryotes. This is the final phase in Transcription: Termination.</p><br>");
-      document.write("<p>Through the process of Transcription an mRNA strand is transcribed. From your DNA sequence of <b>"+dna+"</b>, the mRNA strand which would be transcribed is <b>"+mrna+"</b>.</p><br>");
+      let aminoacids = localStorage.getItem("aminoacids");
+      document.write("<p>Transcription is the process of transcribing DNA to mRNA. Your DNA sequence is <i><b>"+dna+"</b></i>.</p>");
+      document.write("<p>RNA polymerase is the enzyme that does the work reading the sequence inside the DNA. In order for a gene like yours to be read, there would be a promoter before it. Promoters tell RNA polymerase when to start reading the DNA; at the promoter, RNA polymerase enters and separates the strands. This is Transcription’s first phase: Initiation.</p>");
+      document.write("<p>Then, the pre-mRNA is transcribed, in the 5’ to 3’ direction, meaning the first nucleotide bases are placed on the 5' end. Although the pre-mRNA is transcribed from the template(antisense) strand, because the transcription creates complementary bases, it ends up matching the coding(sense) strand. The RNA Polymerase continues moving along the template strand until it reaches the terminator. This marks the end of Transcription’s second phase: Elongation.</p>");
+      document.write("<p>The terminator causes RNA polymerase to let go of the transcribed mRNA, the means of which differ between prokaryotes and eukaryotes. This is the final phase in Transcription: Termination.</p>");
+      document.write("<p>Through the process of Transcription an mRNA strand is transcribed. From your DNA sequence of <i><b>"+dna+"</b></i>, the mRNA strand which would be transcribed is <i><b>"+mrna+"</b></i>.</p>");
     </script>
-  </body
+    <button class = "nextbutton" onclick = "javascript:next();">next</next>
+  </body>
 </html>
 
